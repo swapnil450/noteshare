@@ -21,7 +21,7 @@ export default function Messenger() {
 
   useEffect(() => {
     // https://UniFinder-socket.onrender.com/
-    const EndPoint="https://UniFinder-socket.onrender.com/";
+    const EndPoint="https://notesharesocket.vercel.app";
     socket.current = io(EndPoint);
     socket.current.on("getMessage", (data) => {
       setArrivalMessage({
