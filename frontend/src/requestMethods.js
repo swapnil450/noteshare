@@ -1,8 +1,8 @@
 import axios from "axios";
-const LocalBASE_URL="http://localhost:8000/api/";
-const BASE_URL = "http://localhost:8000/api/";
+const LocalBASE_URL="https://noteshareserver.vercel.app/api/";
+const BASE_URL = "https://noteshareserver.vercel.app/api/";
 
-export const pf="http://localhost:8000/images";
+export const pf="https://noteshareserver.vercel.app/images";
 
 export const publicRequest = axios.create({
   baseURL: BASE_URL,
