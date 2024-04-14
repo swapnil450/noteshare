@@ -6,15 +6,17 @@ const app = express();
 const server = http.createServer(app);
 
 app.use(router);
-
-const io = require("socket.io")(server,{ cors: { origin: '*' } });
+app.use(cors({
+  origin: "https://unifinders.vercel.app",
+}));
+const io = require("socket.io")(server, { cors: { origin: '*' } });
 
 let users = [];
 
 const addUser = (userId, socketId) => {
   !users.some((user) => user.userId === userId) &&
     users.push({ userId, socketId });
-  console.log(userId+"->"+socketId)
+  console.log(userId + "->" + socketId)
 };
 
 const removeUser = (socketId) => {
@@ -51,5 +53,5 @@ io.on("connection", (socket) => {
     io.emit("getUsers", users);
   });
 });
- 
+
 server.listen(process.env.PORT || 8900, () => console.log(`Server has started.`));
