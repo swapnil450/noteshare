@@ -29,7 +29,7 @@ connection(URL);
 // const seturl2="https://handnote.netlify.app/"
  
 app.use(cors({
-  origin:"*",
+  origin:"http://localhost:3000",
   methods: ['GET','POST','DELETE','UPDATE','PUT'],
   allowedHeaders:['Content-Type', 'Authorization','sessionId'],
   exposedHeaders:['sessionId'],
