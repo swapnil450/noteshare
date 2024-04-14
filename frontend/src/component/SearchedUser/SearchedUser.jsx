@@ -50,7 +50,7 @@ const useStyles = makeStyles(theme => ({
 
 const SearchedUser = ({receiverUser}) => {
     // console.log(receiverUser)
-    const pf = "https://notesharingbackend-ankitkr437.onrender.com/images/";
+    const pf = "https://UniFinderbackend-ankitkr437.onrender.com/images/";
     const { currentUser:user} = useSelector((state) => state.user);
     const classes =useStyles();
     const [isbuilding ,setisbuilding] =useState(false)

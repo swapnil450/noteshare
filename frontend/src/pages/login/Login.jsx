@@ -91,7 +91,7 @@ const Login = () => {
   };
   return (
     <Container>
-      <TitleNav>NoteSharing</TitleNav>
+      <TitleNav>UniFinder</TitleNav>
       <Wrapper>
         <Title>SIGN IN</Title>
         <Form>

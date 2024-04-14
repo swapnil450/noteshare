@@ -10,7 +10,7 @@ const Footer = () => {
         <div className="about-footer">
            
           <p className="logo">
-             NoteSharing
+             UniFinder
           </p>
           
           <div className="about-content-container">
@@ -27,7 +27,7 @@ const Footer = () => {
 
           <div className="footer-bottom-container">
             <p className="copyright">
-            Copyright © 2023 NoteSharing. All Rights Reserved
+            Copyright © 2023 UniFinder. All Rights Reserved
             </p>
             <div className="footer-link">
               <Link to="/" className="footer-link-item" style={{textDecoration:"none"}}>
