@@ -1,6 +1,6 @@
 import axios from "axios";
-const LocalBASE_URL = "https://noteshareserver.vercel.app/api";
-const BASE_URL = "https://noteshareserver.vercel.app/api";
+const LocalBASE_URL = "https://noteshareserver.vercel.app/api/";
+const BASE_URL = "https://noteshareserver.vercel.app/api/";
 
 export const pf = "https://noteshareserver.vercel.app/images";
 

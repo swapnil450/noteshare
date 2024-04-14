@@ -28,10 +28,7 @@ connection(URL);
 // const seturl="http://localhost:3000";
 // const seturl2="https://handnote.netlify.app/"
 
-app.use(cors({
-  origin: "https://unifinders.vercel.app",
-  methods: ['GET', 'POST', 'DELETE', 'UPDATE', 'PUT'],
-}));
+app.use(cors("https://unifinders.vercel.app"));
 // app.use(function(req, res, next) {
 //   res.header("Access-Control-Allow-Origin", "*");
 //   res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");

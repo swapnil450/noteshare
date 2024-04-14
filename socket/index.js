@@ -6,10 +6,10 @@ const app = express();
 const server = http.createServer(app);
 
 app.use(router);
-app.use(cors({
-  origin: "https://unifinders.vercel.app",
-}));
-const io = require("socket.io")(server, { cors: { origin: '*' } });
+app.use(cors(
+  "https://unifinders.vercel.app",
+));
+const io = require("socket.io")(server, { cors: { origin: 'https://unifinders.vercel.app' } });
 
 let users = [];
 
